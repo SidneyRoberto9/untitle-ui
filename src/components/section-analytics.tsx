@@ -27,7 +27,7 @@ const features = [
 
 const SectionAnalytics = () => {
   return (
-    <div className="py-24">
+    <div className="pt-24">
       <GridContainer>
         <div className="mb-16 text-center">
           <span className="bg-brand-50 text-brand-700 inline-block rounded-2xl px-3 py-1 text-sm/snug font-medium">
@@ -65,6 +65,7 @@ const SectionAnalytics = () => {
             <ItemFeature key={index} {...props} />
           ))}
         </div>
+        <hr className="mt-24 border-gray-200" />
       </GridContainer>
     </div>
   )
