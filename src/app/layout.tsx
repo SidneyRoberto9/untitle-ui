@@ -1,8 +1,11 @@
-import "@/styles/globals.css"
+import '@/styles/globals.css';
 
-import { Inter } from "next/font/google"
-import { PropsWithChildren } from "react"
-import { twMerge } from "tailwind-merge"
+import { twMerge } from 'tailwind-merge';
+import { PropsWithChildren } from 'react';
+import { Inter } from 'next/font/google';
+
+import Header from '@/components/header';
+import Footer from '@/components/footer';
 
 import type { Metadata } from "next"
 
@@ -19,7 +22,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
-      <body className={twMerge(inter.variable, "antialiased")}>{children}</body>
+      <body className={twMerge(inter.variable, "antialiased")}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }
