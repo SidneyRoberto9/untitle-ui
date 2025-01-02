@@ -11,6 +11,12 @@ export default {
       maxWidth: {
         container: "77.5rem",
       },
+      colors: {
+        gray: {
+          100: "#F2F4F7",
+          600: "#475467",
+        },
+      },
     },
   },
   plugins: [],

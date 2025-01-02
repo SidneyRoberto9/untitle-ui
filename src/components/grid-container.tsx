@@ -1,4 +1,5 @@
 import { ReactNode } from "react"
+import { twMerge } from "tailwind-merge"
 
 interface GridContainerProps {
   children: ReactNode
@@ -6,7 +7,11 @@ interface GridContainerProps {
 }
 
 const GridContainer = ({ children, className }: GridContainerProps) => {
-  return <div className="max-w-container mx-auto w-full px-4">{children}</div>
+  return (
+    <div className={twMerge("max-w-container mx-auto w-full px-3", className)}>
+      {children}
+    </div>
+  )
 }
 
 export default GridContainer
