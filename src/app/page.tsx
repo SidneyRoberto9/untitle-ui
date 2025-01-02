@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 
+import SectionTrial from '@/components/section-trial';
 import SectionTestimonials from '@/components/section-testimonials';
 import SectionQuestions from '@/components/section-questions';
 import SectionLaunch from '@/components/section-launch';
@@ -20,6 +21,7 @@ export default function Page() {
       <SectionAnalytics />
       <SectionQuestions />
       <SectionLaunch />
+      <SectionTrial />
     </Fragment>
   )
 }
