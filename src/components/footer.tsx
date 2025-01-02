@@ -35,14 +35,14 @@ const itemsNav = [
 
 const Footer = () => {
   return (
-    <footer className="pb-12 pt-16">
+    <footer className="py-12 lg:pt-16">
       <GridContainer>
-        <div className="flex items-start justify-between pb-16">
+        <div className="grid grid-cols-2 items-start justify-between gap-8 pb-16 lg:flex lg:gap-0">
           {itemsNav.map((item, index) => (
             <ItemNav key={index} {...item} />
           ))}
         </div>
-        <div className="flex items-center justify-between border-t border-t-gray-200 pt-8">
+        <div className="flex flex-col items-start justify-between gap-6 border-t border-t-gray-200 pt-8 lg:flex-row lg:items-center lg:gap-0">
           <Image
             src="/logo.svg"
             alt="Logo Untitled UI"

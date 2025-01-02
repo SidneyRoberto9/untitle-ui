@@ -1,7 +1,7 @@
 "use client"
 
-import { useState } from "react"
-import { FiMinusCircle, FiPlusCircle } from "react-icons/fi"
+import { FiPlusCircle, FiMinusCircle } from 'react-icons/fi';
+import { useState } from 'react';
 
 interface QuestionProps {
   title: string
@@ -18,10 +18,10 @@ const Question = ({ response, title, isOpen = false }: QuestionProps) => {
 
   return (
     <div className="w-full pb-8 pt-6 first:pt-0 last:pb-0">
-      <button className="flex w-full items-center justify-between">
+      <button className="flex w-full items-center justify-between text-left">
         <h3 className="text-lg/normal font-semibold text-gray-900">{title}</h3>
         <Icon
-          size={25}
+          size={20}
           className="text-brand-600"
           onClick={handleOpenQuestion}
         />

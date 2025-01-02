@@ -2,15 +2,15 @@ import GridContainer from '@/components/grid-container';
 
 const SectionTrial = () => {
   return (
-    <div className="bg-gray-50 py-24">
+    <div className="bg-gray-50 py-16 lg:py-24">
       <GridContainer className="text-center">
-        <h2 className="mb-5 text-4xl font-semibold text-gray-900">
+        <h2 className="mb-5 text-3xl font-semibold text-gray-900 lg:text-4xl">
           Start your free trial
         </h2>
-        <p className="mb-10 text-xl/6 text-gray-600">
+        <p className="mb-10 text-lg/relaxed text-gray-600 lg:text-xl/6">
           Join over 4,000+ startups already growing with Untitled.
         </p>
-        <div className="flex justify-center gap-3">
+        <div className="flex w-full flex-col justify-center gap-3 lg:w-auto lg:flex-row">
           <button className="rounded-lg border border-gray-300 bg-white px-5 py-3 font-semibold leading-normal text-gray-700 transition-colors hover:bg-gray-100">
             Learn more
           </button>

@@ -1,7 +1,7 @@
-import Image from "next/image"
+import Image from 'next/image';
 
-import GridContainer from "@/components/grid-container"
-import Question from "@/components/question"
+import Question from '@/components/question';
+import GridContainer from '@/components/grid-container';
 
 const questions = [
   {
@@ -39,13 +39,13 @@ const questions = [
 
 const SectionQuestions = () => {
   return (
-    <div className="pt-24">
+    <div className="pt-16 lg:pt-24">
       <GridContainer>
-        <div className="mb-16 space-y-5 text-center">
-          <h2 className="text-4xl font-semibold -tracking-[0.72px] text-gray-900">
+        <div className="mb-12 space-y-5 text-center lg:mb-16">
+          <h2 className="text-3xl font-semibold -tracking-[0.72px] text-gray-900 lg:text-4xl">
             Frequently asked questions
           </h2>
-          <p className="text-xl/6 text-gray-600">
+          <p className="text-lg/relaxed text-gray-600 lg:text-xl/6">
             Everything you need to know about the product and billing.
           </p>
         </div>
@@ -71,12 +71,12 @@ const SectionQuestions = () => {
             Can’t find the answer you’re looking for? Please chat to our
             friendly team.
           </p>
-          <button className="bg-brand-600 hover:bg-brand-700 rounded-lg px-5 py-3 font-semibold leading-normal text-white transition-colors">
+          <button className="rounded-lg bg-brand-600 px-5 py-3 font-semibold leading-normal text-white transition-colors hover:bg-brand-700">
             Get in touch
           </button>
         </div>
 
-        <hr className="mt-24 border-gray-200" />
+        <hr className="mt-16 border-gray-200 lg:mt-24" />
       </GridContainer>
     </div>
   )

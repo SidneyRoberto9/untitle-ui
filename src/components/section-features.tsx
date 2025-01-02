@@ -1,14 +1,7 @@
-import {
-  FiBarChart2,
-  FiCommand,
-  FiMail,
-  FiMessageCircle,
-  FiSmile,
-  FiZap,
-} from "react-icons/fi"
+import { FiZap, FiSmile, FiMessageCircle, FiMail, FiCommand, FiBarChart2 } from 'react-icons/fi';
 
-import GridContainer from "@/components/grid-container"
-import ItemFeature from "@/components/item-feature"
+import ItemFeature from '@/components/item-feature';
+import GridContainer from '@/components/grid-container';
 
 const features = [
   {
@@ -45,22 +38,22 @@ const features = [
 
 const SectionFeatures = () => {
   return (
-    <div className="py-24">
-      <GridContainer>
+    <div className="py-16 lg:py-24">
+      <GridContainer className="flex flex-col items-center justify-center">
         <div className="mb-16 text-center">
-          <small className="text-brand-700 mb-3 block text-base font-semibold">
+          <small className="mb-3 block text-base font-semibold text-brand-700">
             Features
           </small>
-          <h2 className="-tracking-tighter-[-0.72px] mb-5 text-center text-4xl font-semibold text-gray-900">
+          <h2 className="-tracking-tighter-[-0.72px] mb-5 text-center text-3xl font-semibold text-gray-900 lg:text-4xl">
             Analytics that feels like it’s from the future
           </h2>
-          <p className="mx-auto max-w-3xl text-xl/6 text-gray-600">
+          <p className="mx-auto max-w-3xl text-lg/relaxed text-gray-600 lg:text-xl/6">
             Powerful, self-serve product and growth analytics to help you
             convert, engage, and retain more users. Trusted by over 4,000
             startups.
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-x-8 gap-y-16">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-12 lg:grid-cols-3 lg:gap-y-16">
           {features.map((props, index) => (
             <ItemFeature key={index} {...props} />
           ))}

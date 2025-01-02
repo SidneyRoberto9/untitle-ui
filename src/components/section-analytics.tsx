@@ -1,8 +1,8 @@
-import Image from "next/image"
-import { FiBarChart2, FiMail, FiZap } from "react-icons/fi"
+import { FiZap, FiMail, FiBarChart2 } from 'react-icons/fi';
+import Image from 'next/image';
 
-import GridContainer from "@/components/grid-container"
-import ItemFeature from "@/components/item-feature"
+import ItemFeature from '@/components/item-feature';
+import GridContainer from '@/components/grid-container';
 
 const features = [
   {
@@ -20,52 +20,52 @@ const features = [
   {
     icon: FiBarChart2,
     title: "Manage your team with reports",
-    text: "Measure what matters with Untitled’s easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks.",
+    text: "Measure what matters with Untitled’s easy-to-use reports. You can filter, export, and drillDown on the data in a couple clicks.",
     hasBtn: true,
   },
 ]
 
 const SectionAnalytics = () => {
   return (
-    <div className="pt-24">
+    <div className="pt-16 lg:pt-24">
       <GridContainer>
-        <div className="mb-16 text-center">
-          <span className="bg-brand-50 text-brand-700 inline-block rounded-2xl px-3 py-1 text-sm/snug font-medium">
+        <div className="mb-12 text-center lg:mb-16">
+          <span className="inline-block rounded-2xl bg-brand-50 px-3 py-1 text-sm/snug font-medium text-brand-700">
             Features
           </span>
-          <h2 className="mb-6 mt-4 text-4xl font-semibold text-gray-900">
+          <h2 className="mb-6 mt-4 text-3xl font-semibold text-gray-900 lg:text-4xl">
             Cutting-edge features for advanced analytics
           </h2>
-          <p className="mx-auto max-w-3xl text-xl/normal text-gray-600">
+          <p className="mx-auto max-w-3xl text-lg/relaxed text-gray-600 lg:text-xl/normal">
             Powerful, self-serve product and growth analytics to help you
             convert, engage, and retain more users. Trusted by over 4,000
             startups.
           </p>
         </div>
 
-        <div className="relative mx-auto mb-24 h-[35.0625rem] w-full max-w-[55.5rem]">
+        <div className="relative mx-auto mb-12 h-auto w-full max-w-full lg:mb-24 lg:h-[35.0625rem] lg:max-w-[55.5rem]">
           <Image
             src="/screen-macbook.png"
             alt="Mockup MacBook"
             width={768}
             height={512}
-            className="absolute -right-[1.125rem] -top-[0.9375rem]"
+            className="absolute -right-[1.125rem] -top-[0.9375rem] hidden lg:block"
           />
           <Image
             src="/iphone.png"
             alt="Mockup Iphone"
             width={244}
             height={497}
-            className="absolute bottom-0 left-0"
+            className="relative bottom-0 left-0 mx-auto lg:absolute"
           />
         </div>
 
-        <div className="flex items-start justify-between">
+        <div className="flex flex-col items-center justify-between gap-10 lg:flex-row lg:items-start lg:gap-0">
           {features.map((props, index) => (
             <ItemFeature key={index} {...props} />
           ))}
         </div>
-        <hr className="mt-24 border-gray-200" />
+        <hr className="mt-16 border-gray-200 lg:mt-24" />
       </GridContainer>
     </div>
   )

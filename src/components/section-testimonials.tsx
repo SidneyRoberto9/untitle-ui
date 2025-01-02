@@ -1,10 +1,10 @@
-import Image from "next/image"
+import Image from 'next/image';
 
-import GridContainer from "@/components/grid-container"
+import GridContainer from '@/components/grid-container';
 
 const SectionTestimonials = () => {
   return (
-    <div className="bg-gray-50 py-24">
+    <div className="bg-gray-50 py-16 lg:py-24">
       <GridContainer className="text-center">
         <Image
           src="/sisyphus.svg"
@@ -13,7 +13,7 @@ const SectionTestimonials = () => {
           alt="sisyphus"
           className="mx-auto"
         />
-        <h2 className="-tracking-tighter-[0.96px] my-8 text-5xl/tight font-medium text-gray-900">
+        <h2 className="-tracking-tighter-[0.96px] my-8 text-3xl/tight font-medium text-gray-900 lg:text-5xl/tight">
           We’ve been using Untitled to kick start every new project and can’t
           imagine working without it.
         </h2>

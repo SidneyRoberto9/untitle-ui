@@ -28,33 +28,34 @@ const itensLaunch = [
 
 const SectionLaunch = () => {
   return (
-    <div className="py-24">
+    <div className="py-16 lg:py-24">
       <GridContainer>
         <div className="mb-16 w-full max-w-3xl">
           <span className="mb-3 block font-semibold text-brand-700">
             Launch faster
           </span>
-          <h2 className="mb-5 text-4xl font-semibold -tracking-[0.045rem] text-gray-900">
+          <h2 className="mb-5 text-3xl font-semibold -tracking-[0.045rem] text-gray-900 lg:text-4xl">
             Build something great
           </h2>
-          <p className="text-xl/6 text-gray-600">
+          <p className="text-lg/relaxed text-gray-600 lg:text-xl/6">
             We’ve done all the heavy lifting so you don´t have to — get all the
             data you need to launch and grow your business faster.
           </p>
         </div>
 
-        <div className="flex items-center justify-between">
-          <div className="grid w-full max-w-xl grid-cols-2 gap-x-8 gap-y-16">
+        <div className="flex flex-col items-center justify-between gap-12 lg:flex-row lg:gap-0">
+          <div className="grid w-full max-w-xl grid-cols-1 gap-x-8 gap-y-8 lg:grid-cols-2 lg:gap-y-16">
             {itensLaunch.map((item, index) => (
               <ItemLaunch key={index} {...item} />
             ))}
           </div>
           <div>
             <Image
-              src="/img-lauch.jpg"
+              src="/img-launch.jpg"
               width={560}
               height={560}
               alt="Image Launch"
+              className="max-h-60 lg:max-h-[35rem]"
             />
           </div>
         </div>
